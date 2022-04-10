@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+  <menu id="apps-accessories-menu" label="Accessories">
+
+    <item label="Terminal">
+      <action name="Execute">
+        <command>gnome-terminal</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+        </startupnotify>
+      </action>
+    </item>
+
+    <item label="Run">
+      <action name="Execute">
+        <command>gmrun</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+        </startupnotify>
+      </action>
+    </item>
+
+    <item label="App Finder">
+      <action name="Execute">
+        <command>xfce4-appfinder</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+        </startupnotify>
+      </action>
+    </item>
+
+    <item label="Clock">
+      <action name="Execute">
+        <command>gnome-terminal --profile=time --title=time --geometry 36x8 --hide-menubar --window -e "tty-clock -t "</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+        </startupnotify>
+      </action>
+    </item>
+
+    <item label="Calculator">
+      <action name="Execute">
+        <command>kcalc</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+        </startupnotify>
+      </action>
+    </item>
+
+    <item label="Character Map">
+      <action name="Execute">
+        <command>kcharselect</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+        </startupnotify>
+      </action>
+    </item>
+
+    <menu id="system-menu" label="System">
+      <item label="Openbox">
+        <action name="Execute">
+          <command>obconf</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+      <item label="Wallpaper">
+        <action name="Execute">
+          <command>nitrogen</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+      <item label="Dock">
+        <action name="Execute">
+          <command>tint2</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+      <item label="Kill">
+        <action name="Execute">
+          <command>xkill</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+    </menu>
+
+    <menu id="root-menu" label="">
+      <item label="Chrome">
+        <action name="Execute">
+          <command>google-chrome-stable</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+      <item label="Files">
+        <action name="Execute">
+          <command>thunar</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+      <item label="Volume">
+        <action name="Execute">
+          <command>pavucontrol</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+      <menu id="apps-accessories-menu" />
+      <menu id="system-menu" />
+      <item label="Log Out">
+        <action name="Exit">
+          <prompt>yes</prompt>
+        </action>
+      </item>
+    </menu>
+  </menu>
+</openbox_menu>
