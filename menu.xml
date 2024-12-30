@@ -1,10 +1,11 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
     <menu id="root-menu" label="dd">
       <item label="Run">
       <action name="Execute">
-        <command>gmrun</command>
+        <command>xfce4-appfinder -c</command>
         <startupnotify>
           <enabled>yes</enabled>
         </startupnotify>
@@ -20,29 +21,37 @@
     </item>
    <item label="Term">
       <action name="Execute">
-        <command>gnome-terminal</command>
+        <command>xfce4-terminal</command>
         <startupnotify>
           <enabled>yes</enabled>
         </startupnotify>
       </action>
     </item>
-    <item label="Time">
-      <action name="Execute">
-        <command>gnome-terminal --profile=time --title=time --geometry 36x8 --hide-menubar --window -e "tty-clock -t "</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-        </startupnotify>
-      </action>
-    </item>
-      <item label="Chrome">
+      <item label="Firefox">
         <action name="Execute">
-          <command>google-chrome-stable</command>
+          <command>firefox</command>
           <startupnotify>
             <enabled>yes</enabled>
           </startupnotify>
         </action>
       </item>
-      <item label="Thunar">
+      <item label="Chromium">
+        <action name="Execute">
+          <command>chromium</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+       <item label="Brave">
+        <action name="Execute">
+          <command>brave</command>
+          <startupnotify>
+            <enabled>yes</enabled>
+          </startupnotify>
+        </action>
+      </item>
+      <item label="thunar">
         <action name="Execute">
           <command>thunar</command>
           <startupnotify>

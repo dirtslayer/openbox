@@ -4,4 +4,3 @@ pasystray &
 nitrogen --restore &
 tint2 &
 notify-send "archdd" &
-~/.screenlayout/hdmi1.sh &
